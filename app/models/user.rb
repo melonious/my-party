@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :reservations
-  attr_accessor :username, :email, :password, :password_confirmation
+  # attr_accessible :username :email :password :password_confirmation
 
   #  require 'digest/sha1'
   # encrypted_password= Digest::SHA1.hexdigest(password)
