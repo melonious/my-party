@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
+  get 'sessions/login,'
+
+  get 'sessions/home,'
+
+  get 'sessions/profile,'
+
+  get 'sessions/setting'
+
   resources :reservations
   resources :restaurants
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  #match ':controller(/:action(/:id))(.:format)'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
