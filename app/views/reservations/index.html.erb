@@ -1,19 +1,29 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
 
-<h1>Listing Reservations</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Time</th>
-      <th>Partysize</th>
-      <th>Location</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <p id="notice"><%= notice %></p>
 
-  <tbody>
-    <% @reservations.each do |reservation| %>
+  <h1>Listing Reservations</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Partysize</th>
+        <th>Location</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @reservations.each do |reservation| %>
       <tr>
         <td><%= reservation.time %></td>
         <td><%= reservation.partysize %></td>
@@ -22,10 +32,13 @@
         <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
         <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+      <% end %>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New Reservation', new_reservation_path %>
+  <%= link_to 'New Reservation', new_reservation_path %>
+
+</body>
+</html>

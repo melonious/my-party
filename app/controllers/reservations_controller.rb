@@ -15,15 +15,18 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   def new
     @reservation = Reservation.new
+    @reservations = Reservation.all.name
   end
 
   # GET /reservations/1/edit
   def edit
+    @reservations = Reservation.all.name
   end
 
   # POST /reservations
   # POST /reservations.json
   def create
+    @reservations = Reservation.all.name
     @reservation = Reservation.new(reservation_params)
 
     respond_to do |format|
@@ -69,6 +72,6 @@ class ReservationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservation_params
-      params.require(:reservation).permit(:time, :partysize)
+      params.require(:reservation).permit(:time, :partysize, :restaurant_id)
     end
 end
