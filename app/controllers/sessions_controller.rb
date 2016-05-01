@@ -2,9 +2,12 @@ class SessionsController < ApplicationController
 
   before_filter :authenticate_user, :only => [:home, :profile, :setting]
   before_filter :save_login_state, :only => [:login, :login_attempt]
+  # validates :password, length: { minimum: 6 }, unless: Proc.new { |user| user.password.nil? }
+  # validates :password_confirmation, presence: true, unless: Proc.new { |user| user.password.nil? }
+
   def login
   end
-  
+
   def login_attempt
     authorized_user = User.authenticate(params[:username_or_email],params[:login_password])
     if authorized_user
