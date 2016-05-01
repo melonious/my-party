@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :reservations
+  
   # attr_accessible :username :email :password :password_confirmation
 
   #  require 'digest/sha1'
@@ -11,7 +12,9 @@ class User < ActiveRecord::Base
   validates_length_of :username, :in => 3..20, :on => :create
   validates :email, :presence => true, :uniqueness => true, :format => EMAIL_REGEX
   validates :password, :confirmation => true #password_confirmation attr
-  validates_length_of :password, :in => 6..20, :on => :create
+  validates_length_of :password, :in => 5..20, :on => :create
+
+
 
   salt= Digest::SHA1.hexdigest("# We add {email} as unique value and #{Time.now} as random value")
   encrypted_password= Digest::SHA1.hexdigest("Adding #{salt} to {password}")
