@@ -19,6 +19,12 @@
     <%= f.label :partysize %><br>
     <%= f.number_field :partysize %>
   </div>
+
+  <div class="field">
+    <%= f.label :restaurant_id %><br>
+    <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: false %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
