@@ -24,6 +24,11 @@
   <%= @reservation.restaurant.nil? ? "none" : @reservation.restaurant.name %>
 </p>
 
+<p>
+  <strong>Notes:</strong>
+  <%= @reservation.note.nil? ? "none" : @reservation.note %>
+</p>
+
 <%= link_to 'Edit', edit_reservation_path(@reservation) %>
 <%= link_to 'Back', reservations_path %>
 

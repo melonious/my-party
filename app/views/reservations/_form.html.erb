@@ -25,6 +25,11 @@
     <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: false %>
   </div>
 
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_field :note %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
