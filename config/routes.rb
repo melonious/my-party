@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   match ':controller(/:action(/:id))(.:format)', via: [:get, :post]
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  # root 'session/home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
