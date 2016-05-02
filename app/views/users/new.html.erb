@@ -1,5 +1,6 @@
 <% @page_title = "MyParty | Signup" %>
-<div class="Sign_Form">
+<div id="new_user">
+<div class="sign-form">
   <h1>Sign Up</h1>
   <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
     <p> Username:</br> <%= f.text_field :username%> </p>
@@ -15,6 +16,7 @@
     <% end %>
     </ul>
   <% end %>
+</div>
 
 
 

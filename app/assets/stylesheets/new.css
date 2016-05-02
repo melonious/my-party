@@ -1,0 +1,10 @@
+#new_user {
+  background-image:url("newuser.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+
+}
+.sign-form {
+  padding-top: 40px;
+}
