@@ -1,0 +1,12 @@
+
+#loginWrapper {
+  background-image:url("myparty1.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+
+}
+
+.sign-form {
+  padding-top: 40px;
+}
