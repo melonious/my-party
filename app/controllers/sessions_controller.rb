@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
-  before_filter :authenticate_user, :only => [:home, :profile, :setting]
-  before_filter :save_login_state, :only => [:login, :login_attempt]
+  before_action :authenticate_user, :only => [:home, :profile, :setting]
+  before_action :save_login_state, :only => [:login, :login_attempt]
   # validates :password, length: { minimum: 6 }, unless: Proc.new { |user| user.password.nil? }
   # validates :password_confirmation, presence: true, unless: Proc.new { |user| user.password.nil? }
 
@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
     if authorized_user
       session[:user_id] = authorized_user.id
       flash[:notice] = "Wow Welcome again, you logged in as #{authorized_user.username}"
-      redirect_to(:action => 'home')
+      render "sessions/home"
     else
       flash[:notice] = "Invalid Username or Password"
       flash[:color]= "invalid"

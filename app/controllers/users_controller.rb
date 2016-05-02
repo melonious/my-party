@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_filter :save_login_state, :only => [:new, :create]
+  before_action :save_login_state, :only => [:new, :create]
   # validates :password, length: { minimum: 6 }, unless: Proc.new { |user| user.password.nil? }
   # validates :password_confirmation, presence: true, unless: Proc.new { |user| user.password.nil? }
 
