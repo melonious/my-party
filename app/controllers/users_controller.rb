@@ -33,17 +33,18 @@ class UsersController < ApplicationController
       if @user.save
         flash[:notice] = "You signed up succesfully"
         flash[:color]= "valid"
+        render "sessions/home"
       else
         flash[:notice] = "Form is invalid"
         flash[:color]= "invalid"
-
+        render "new"
         # format.html { redirect_to @user, notice: 'User was successfully created.' }
         # format.json { render :show, status: :created, location: @user }
       # else
       #   format.html { render :new }
       #   format.json { render json: @user.errors, status: :unprocessable_entity }
       end
-      render "new"
+
     end
 
 
