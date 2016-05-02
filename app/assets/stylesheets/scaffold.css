@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Playfair Display', arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
 }

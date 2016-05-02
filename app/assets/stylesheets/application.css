@@ -13,6 +13,30 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+/*body {
+  font-family: 'Playfair Display', serif;
+}*/
+
+table {
+  font-family: 'Playfair Display', serif;
+}
+
+thead {
+  font-size: 1.5em;
+}
+/*
+tbody {
+  font-family: 'Playfair Display', serif;
+}*/
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3em;
+}
+
 
  * {
    box-sizing: border-box;
