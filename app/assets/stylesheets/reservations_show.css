@@ -19,16 +19,19 @@ ul p {
   font-size: 2em;
 }
 
-a {
+p a {
   color: #473a2e;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
 }
 
 #show-res-links {
   display: flex;
   justify-content: space-around;
   width: 25vw;
+  padding: 1em 0;
   background:rgba(252, 245, 239,0.5);
+  font-weight: bold;
 }
 
 #show-res-links p {

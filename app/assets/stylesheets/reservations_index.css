@@ -1,7 +1,7 @@
 #link_to_new_res {
   background:rgba(232, 237, 241,0.7);
-  font-size: 1.5em;
-  padding: 1.5em 0.5em 0.5em 0.5em;
+  font-size: 2em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -17,9 +17,13 @@
   color: black;
 }
 
+#resindex {
+  color: #640404
+}
+
 a { color: #272727; text-decoration: none;}
 /*a:visited { color: #69688a; }*/
-a:hover { color: #4b0303;}
+a:hover { color: #640404;}
 
 #indexres {
   background:rgba(232, 237, 241,0.7);
@@ -30,6 +34,12 @@ tbody {
   font-size: 1.5em;
 }
 
-.minilinks {
-  font-size: 1em;
+.minilinks a{
+  font-size: 1.5em;
+  color: #272727;
+  text-decoration: none;
 }
+
+.minilinks a:hover {
+   color: #4b0303;
+ }
