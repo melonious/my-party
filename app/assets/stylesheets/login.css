@@ -9,4 +9,14 @@
 
 .sign-form {
   padding-top: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #580000;
+}
+
+.sign-form h1 {
+  font-size: 5em;
+}
+
+.sign-form p {
+  font-size: 1.5em;
 }

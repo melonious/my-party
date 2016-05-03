@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 #home {
   display: flex;
   align-items: center;
@@ -32,12 +24,16 @@
   padding-bottom: 35px;
   margin-bottom:40px;
   flex: 3 0 100%;
+  text-shadow: 1px 1px 1px #743a08;
 }
 
 .home-button {
   flex: 1 0 50%;
-  border: solid white;
-  color: white;
+  /*border: solid white;*/
+  /*text-shadow: 1px 1px 1px #00003f;*/
+  font-weight: bolder;
+  background:rgba(116, 58, 8,0.5);
+  align-items: center;
 }
 
 .home-button a {
