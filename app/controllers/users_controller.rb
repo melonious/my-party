@@ -33,7 +33,7 @@ class UsersController < ApplicationController
       if @user.save
         flash[:notice] = "You signed up succesfully"
         flash[:color]= "valid"
-        render "sessions/home"
+        redirect_to reservations_path
       else
         flash[:notice] = "Form is invalid"
         flash[:color]= "invalid"
