@@ -21,16 +21,17 @@
         <td><%= reservation.partysize %></td>
         <td><%= reservation.restaurant.nil? ? "none" : reservation.restaurant.name %></td>
         <td><%= reservation.note.nil? ? "none" : reservation.note %>
-        <td><%= link_to 'Show', reservation %></td>
+        <td><%= link_to 'Details', reservation %></td>
         <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Cancel', reservation, method: :delete, data: { confirm: 'Are you sure you want to cancel your reservation?' } %></td>
       </tr>
       <% end %>
     </tbody>
   </table>
 
   <br>
-
-  <%= link_to 'New Reservation', new_reservation_path %>
+<div id="link_to_new_res">
+  <%= link_to 'Make a New Reservation', new_reservation_path %>
+</div>
 
 </div>

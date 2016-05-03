@@ -23,6 +23,12 @@
   box-sizing: border-box;
 }
 
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3em;
+}
+
 table {
   font-family: 'Playfair Display', serif;
 }
@@ -35,6 +41,7 @@ tbody {
   font-family: 'Playfair Display', serif;
 }*/
 
+<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -43,6 +50,8 @@ h1 {
   font-size: 3em;
   margin: 0;
 }
+=======
+>>>>>>> c9fac2fc0de61fc740dc7ea8a9531d8ed1050bc2
 
 a {
   text-decoration: none;
