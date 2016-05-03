@@ -1,7 +1,7 @@
 <div id="reservation_details">
   <p id="notice"><%= notice %></p>
 
-  <ul>
+<div id="showresinfo">
     <p>
       <strong>Date &amp Time:</strong>
       <%= @reservation.time.strftime("%m/%d/%Y at %I:%M%p") %>
@@ -21,7 +21,7 @@
       <strong>Special Notes:</strong>
       <%= @reservation.note.nil? ? "none" : @reservation.note %>
     </p>
-  </ul>
+  </div>  
   <div id="show-res-links">
   <p><%= link_to 'Edit', edit_reservation_path(@reservation) %></p>
   <p><%= link_to 'Back', reservations_path %></p>
