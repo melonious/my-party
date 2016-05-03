@@ -1,7 +1,7 @@
 #link_to_new_res {
   background:rgba(232, 237, 241,0.7);
-  font-size: 2em;
-  padding: .5em;
+  font-size: 1.5em;
+  padding: 1.5em 0.5em 0.5em 0.5em;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -17,9 +17,9 @@
   color: black;
 }
 
-a { color: #272727; }
+a { color: #272727; text-decoration: none;}
 /*a:visited { color: #69688a; }*/
-/*a:hover { color: #fff; background-color:#000; }*/
+a:hover { color: #4b0303;}
 
 #indexres {
   background:rgba(232, 237, 241,0.7);
@@ -28,4 +28,8 @@ a { color: #272727; }
 
 tbody {
   font-size: 1.5em;
+}
+
+.minilinks {
+  font-size: 1em;
 }

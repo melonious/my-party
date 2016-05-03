@@ -1,0 +1,36 @@
+#reservation_details {
+  text-align: center;
+  background-image: url("french-restaurant.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #473a2e;
+
+}
+
+ul {
+  background:rgba(252, 245, 239,0.5);
+}
+
+ul p {
+  font-size: 2em;
+}
+
+a {
+  color: #473a2e;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#show-res-links {
+  display: flex;
+  justify-content: space-around;
+  width: 25vw;
+  background:rgba(252, 245, 239,0.5);
+}
+
+#show-res-links p {
+  margin: 0;
+}
