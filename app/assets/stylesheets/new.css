@@ -1,8 +1,9 @@
 #new_user {
   background-image:url("newuser.jpg");
   background-size: cover;
-  height: 100vh;
+  height: cover;
   text-align: center;
+  color: white;
 
 }
 .sign-form {
