@@ -19,6 +19,9 @@
 /*body {
   font-family: 'Playfair Display', serif;
 }*/
+* {
+  box-sizing: border-box;
+}
 
 table {
   font-family: 'Playfair Display', serif;
@@ -32,12 +35,19 @@ tbody {
   font-family: 'Playfair Display', serif;
 }*/
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 3em;
 }
 
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
 
- * {
-   box-sizing: border-box;
- }
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

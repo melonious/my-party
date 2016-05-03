@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url("home-myparty.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  padding-top: 0;
+
+}
+
+#homeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+
+}
+
+#home h1 {
+  font-size: 7em;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  flex: 3 0 100%;
+}
+
+.home-button {
+  flex: 1 0 50%;
+}
+
+.home-button a {
+  display: inline-block;
+  border: solid 2px #fff;
+  padding-top: 20;
+  padding-bottom: 40px;
+  padding-top: 20px;
+
+}
+}
