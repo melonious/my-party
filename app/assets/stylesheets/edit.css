@@ -1,0 +1,12 @@
+
+#reservationedit {
+  background-image: url("resedit.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.resedit {
+  padding-top: 40px;
+ }

@@ -1,0 +1,13 @@
+
+#newRes {
+  background-image:url("new-res.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  color: white;
+
+}
+
+.reservation {
+  padding-top: 40px;
+}
