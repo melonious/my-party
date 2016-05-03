@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :restaurants
   resources :users
 
-  root :to => "sessions#login"
+  root :to => "sessions#home"
   get "signup", :to => "users#new"
   get "login", :to => "sessions#login"
   get "logout", :to => "sessions#logout"
