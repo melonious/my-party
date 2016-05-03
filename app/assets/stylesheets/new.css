@@ -1,7 +1,7 @@
 #new_user {
   background-image:url("newuser.jpg");
   background-size: cover;
-  height: cover;
+  height: 100vh;
   text-align: center;
   color: white;
 
