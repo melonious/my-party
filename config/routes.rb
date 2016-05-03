@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :users
 
   root :to => "sessions#home"
-  get "signup", :to => "users#new"
+  # get "signup", :to => "users#new"
   get "login", :to => "sessions#login"
   get "logout", :to => "sessions#logout"
   get "home", :to => "sessions#home"

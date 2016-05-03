@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   # before_action :authenticate_user, :only => [:home, :profile, :setting]
-  before_action :save_login_state, :only => [:login, :login_attempt]
+  # before_action :save_login_state, :only => [:login, :login_attempt]
   # validates :password, length: { minimum: 6 }, unless: Proc.new { |user| user.password.nil? }
   # validates :password_confirmation, presence: true, unless: Proc.new { |user| user.password.nil? }
 
