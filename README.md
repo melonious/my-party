@@ -5,6 +5,7 @@ My Party is an application for managing restaurant reservations.
 ## Setup Instructions
 
 In your terminal, you will need to clone the repo:
+
 `git clone https://github.com/melonious/my-party.git`
 
 Once the repo has been cloned, you will need bundle, in order to make sure you have all of the necessary gems:
